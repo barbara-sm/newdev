@@ -8,7 +8,7 @@
 }
 body {
    overflow-x: hidden;
-   background: linear-gradient(to top,#00000050, #585859);
+   background: #00000050
 }
 ul {
     list-style: none;
@@ -394,9 +394,6 @@ footer button:hover {
     height: 100%;
     object-fit: cover; 
 }
-/*.background {
-    background: linear-gradient(to top ,  #00000050, #012E40 );
-}*/
 .servico-container {
     display: flex;
     align-items: center;

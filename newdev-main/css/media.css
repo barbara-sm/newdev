@@ -1,3 +1,26 @@
+@media(max-width:1200px){
+    .equipe {
+        max-width: 100%;
+    }
+    .equipe h2 {
+        padding: 10px;
+        margin: 0;
+    }
+    .equipe-caixas {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+    .equipe-caixa {
+        flex: 1 1 calc(33.33% - 20px); 
+        margin: 10px; 
+    }
+    .equipe-caixa:nth-child(4),
+    .equipe-caixa:nth-child(5) {
+        flex: 0 1 calc(33.33% - 20px);
+    }
+}
+
 @media(max-width:1000px){
     .section-topo {
         height: 500px;
@@ -235,7 +258,10 @@
     }
 }
 
-@media(max-width:580px){
+@media(max-width:590px){
+    .sobre-text p {
+        padding: 10px;
+    }
     .valores-caixa {
         flex-direction: column;
     }
@@ -256,6 +282,38 @@
     .valores-caixa h3, .valores-caixa p {
         margin: 0;
     }  
+    footer {
+        height: 300px;
+    }
+    footer p{
+        font-size: 10px;
+    }
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer-atendimento,.footer-links  {
+        flex-basis: 48%; 
+        text-align: center;
+    }
+    .footer-atendimento{
+        margin-top: 10px;
+    }
+    .footer-links ul {
+        text-align: left; 
+        padding-left: 100px;
+    }
+    .footer-localizacao {
+        flex-basis: 100%; 
+        text-align: center;
+        margin-top: 20px;
+    }
+    footer .footer-localizacao button:hover {
+        padding: 0;
+        transform: none;
+        border: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -417,6 +475,13 @@
     }
 }
 
+@media(max-width:450px){
+   .sobre-text h1 {
+    margin-top: -30px;
+    font-size: 20px;
+   }
+}
+
 @media(max-width:360px) {
     .section-topo {
         position: relative; 
@@ -430,11 +495,14 @@
         font-size: 12px;
     }
     .seta {
-        bottom: 40px; 
-        transform: translateX(-40%); 
+        display: none;
     }
     .valores-caixa img {
         margin-right: 0;
+    }
+    .equipe-caixa a {
+        width: 80px;
+        padding: 5px;
     }
     .servico {
         flex-direction: column;
@@ -550,6 +618,101 @@
     }
 }
 
+@media(max-width:760px){
+    .escolher-servico{
+        padding-left: 10px;
+    }
+    .servicos-caixa {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:740px){
+    .avaliacao h4, .avaliacao  p,.avaliacao img{
+        padding: 0;
+      } 
+    .avaliacao  p{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:700px){
+    .topo-menu nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 50px; 
+        background: #e4e3e3af;
+        border-radius: 10px;
+        width: 50%;
+        text-align: center;
+        z-index: 10;
+    }
+    .topo-menu nav ul.show {
+        display: flex;
+    }
+    .topo-menu nav ul li {
+        width: 100%;
+        margin-left: 0;
+    }
+    .topo-menu nav ul li:last-child {
+        margin-left: 0px;
+    }
+    .topo-menu nav ul li:last-child a{
+        background: none;
+        border: none;
+        color: #333;
+        font-weight: bolder;
+    }
+    .topo-menu nav ul li:last-child a:hover {
+       background: none;
+    }
+    .topo-menu nav ul li a {
+        color: #333;
+        text-decoration: none;
+        display: block;
+        transition: color 0.3s ease, background-color 0.3s ease;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    } 
+}
+
+@media(max-width:606px){
+    .avaliacao p {
+        margin-top: 50px;
+        font-size: 14px;
+    }
+    .avalicao img {
+        height: 60px;
+        width: 60px;
+    }
+    footer p, footer a {
+        font-size: 10px;
+    }
+}
+
+@media(max-width:594px){
+    .nossos-projetos {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:538px){
+    .nossos-projetos {
+        margin-top: 20px;
+    }
+    .avaliacao p {
+        font-size: 12px;
+        padding-top: 50px;
+    }
+    .avaliacao h4 {
+        padding-top: 20px;
+    }
+}
+
 @media(max-width:490px){
     .avaliacao p {
         font-size: 12px;
@@ -636,4 +799,16 @@
         margin-top: 5px;
         font-size: 14px;
     } 
+}
+
+@media(max-width:416px){
+  .avaliacao h4, .avaliacao  p,.avaliacao img{
+    padding: 0;
+  }
+}
+
+@media(max-width:360px){
+    .avaliacao p {
+        padding: 0;
+    }
 }
